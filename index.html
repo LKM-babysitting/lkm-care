@@ -1,28 +1,164 @@
-<section id="book">
-  <h2>Book a Babysitter</h2>
-  <form action="mailto:Lkm@gmail.com" method="POST" enctype="text/plain">
+/* Global Settings */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fdfdfd;
+  color: #333;
+}
 
-    <label for="name">Full Name:</label><br>
-    <input type="text" id="name" name="name" required><br><br>
+/* Header */
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
 
-    <label for="email">Email Address:</label><br>
-    <input type="email" id="email" name="email" required><br><br>
+header h1 {
+  font-size: 1.5rem;
+  margin: 0;
+}
 
-    <label for="address">Physical Address:</label><br>
-    <input type="text" id="address" name="address" required><br><br>
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+}
 
-    <label for="date">Preferred Babysitting Date:</label><br>
-    <input type="date" id="date" name="date" required><br><br>
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #b2ff59, #69f0ae);
+  text-align: center;
+  padding: 4rem 1rem;
+}
 
-    <label for="time">Preferred Start Time:</label><br>
-    <input type="time" id="time" name="time" required><br><br>
+.hero h1 {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 20px;
+}
 
-    <label for="message">Additional Details / Notes:</label><br>
-    <textarea id="message" name="message" rows="4" cols="40"></textarea><br><br>
+.btn-primary {
+  background: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s;
+}
 
-    <input type="submit" value="Send Booking Request">
-  </form>
-  <p><em>📧 You'll receive a confirmation email shortly after submitting your request.</em></p>
-</section> 
+.btn-primary:hover {
+  background: #388e3c;
+}
 
+/* Features / About Section */
+.about {
+  padding: 3rem 1rem;
+  text-align: center;
+}
 
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: white;
+  border: 2px solid #e0e0e0;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  width: 250px;
+}
+
+/* Team Section */
+.team {
+  background: #f1f8e9;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.team .member {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+/* Booking Form */
+#book {
+  padding: 3rem 1rem;
+  background: #ffffff;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#book h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-top: 1rem;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #388e3c;
+}
+
+/* Footer */
+footer {
+  background-color: #4CAF50;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  .nav a {
+    margin: 0.5rem 0;
+  }
+}
