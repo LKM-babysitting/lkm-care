@@ -1,164 +1,75 @@
-/* Global Settings */
-body {
-  font-family: 'Segoe UI', sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #fdfdfd;
-  color: #333;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LkM Babysitting Services</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-/* Header */
-header {
-  background-color: #4CAF50;
-  color: white;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
+  <header>
+    <h1>LkM Babysitting</h1>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#team">Team</a>
+      <a href="#book">Book Now</a>
+    </nav>
+  </header>
 
-header h1 {
-  font-size: 1.5rem;
-  margin: 0;
-}
+  <section class="hero">
+    <h1>Trusted Babysitting in Harrismith, Bethlehem & QwaQwa</h1>
+    <a href="#book" class="btn-primary">📅 Book Now</a>
+  </section>
 
-.nav a {
-  color: white;
-  text-decoration: none;
-  margin-left: 15px;
-}
+  <section id="about" class="about">
+    <h2>Why Choose LkM?</h2>
+    <div class="features">
+      <div class="card">❤️ Youth-led & Local</div>
+      <div class="card">👶 Caring, Trained Sitters</div>
+      <div class="card">📍 Serving Your Area</div>
+    </div>
+  </section>
 
-/* Hero Section */
-.hero {
-  background: linear-gradient(to right, #b2ff59, #69f0ae);
-  text-align: center;
-  padding: 4rem 1rem;
-}
+  <section id="team" class="team">
+    <h2>Meet Our Team</h2>
+    <p class="member">👩‍🍼 Luna Makoba</p>
+    <p class="member">🧑‍💼 Kamohelo Mokoena </p>
+    <p class="member">🧑‍💼 Thato Mkhwanazi</p>
+    <p class="member">🧠 Lethabo Mokgadi</p>
+  </section>
 
-.hero h1 {
-  font-size: 2rem;
-  color: #222;
-  margin-bottom: 20px;
-}
+  <section id="book">
+    <h2>📅 Book a Babysitter</h2>
+    <form action="https://formsubmit.co/Lkm@gmail.com" method="POST">
+      <label for="name">Your Full Name</label>
+      <input type="text" id="name" name="name" required />
 
-.btn-primary {
-  background: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  font-size: 1rem;
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
-  text-decoration: none;
-  transition: background 0.3s;
-}
+      <label for="email">Your Email Address</label>
+      <input type="email" id="email" name="email" required />
 
-.btn-primary:hover {
-  background: #388e3c;
-}
+      <label for="address">Physical Address</label>
+      <input type="text" id="address" name="address" required />
 
-/* Features / About Section */
-.about {
-  padding: 3rem 1rem;
-  text-align: center;
-}
+      <label for="date">Preferred Babysitting Date</label>
+      <input type="date" id="date" name="date" required />
 
-.features {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
+      <label for="time">Preferred Start Time</label>
+      <input type="time" id="time" name="time" required />
 
-.card {
-  background: white;
-  border: 2px solid #e0e0e0;
-  padding: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-  width: 250px;
-}
+      <label for="details">Additional Details / Info About Child</label>
+      <textarea id="details" name="details" rows="4" placeholder="Any allergies, special instructions, etc."></textarea>
 
-/* Team Section */
-.team {
-  background: #f1f8e9;
-  padding: 3rem 1rem;
-  text-align: center;
-}
+      <input type="hidden" name="_autoresponse" value="Thank you for booking with LkM Babysitting Services. We’ll get back to you shortly!" />
+      <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html" />
 
-.team .member {
-  margin-top: 1rem;
-  font-weight: bold;
-}
+      <input type="submit" value="Send Booking Request" />
+    </form>
+  </section>
 
-/* Booking Form */
-#book {
-  padding: 3rem 1rem;
-  background: #ffffff;
-  max-width: 600px;
-  margin: 0 auto;
-}
+  <footer>
+    <p>© 2025 LkM Babysitting Services – Powered by the youth of tomorrow</p>
+  </footer>
 
-#book h2 {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-form label {
-  margin-top: 1rem;
-}
-
-form input,
-form textarea {
-  padding: 10px;
-  margin-top: 5px;
-  border: 1px solid #bbb;
-  border-radius: 5px;
-  font-size: 1rem;
-}
-
-form input[type="submit"] {
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  margin-top: 2rem;
-  cursor: pointer;
-}
-
-form input[type="submit"]:hover {
-  background-color: #388e3c;
-}
-
-/* Footer */
-footer {
-  background-color: #4CAF50;
-  color: white;
-  padding: 1rem;
-  text-align: center;
-  margin-top: 3rem;
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-  .features {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  header {
-    flex-direction: column;
-  }
-
-  .nav a {
-    margin: 0.5rem 0;
-  }
-}
+</body>
+</html>
