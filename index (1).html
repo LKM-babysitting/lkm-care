@@ -1,6 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LkM Babysitting Services</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body>
+
   <header>
-    <!-- Logo + nav bar -->
+    <h1>LkM Babysitting</h1>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#team">Team</a>
+      <a href="#book">Book Now</a>
+    </nav>
   </header>
 
   <section class="hero">
@@ -8,26 +22,54 @@
     <a href="#book" class="btn-primary">📅 Book Now</a>
   </section>
 
-  <section class="about">
+  <section id="about" class="about">
     <h2>Why Choose LkM?</h2>
     <div class="features">
-      <div class="card">❤️ Youth-led & local</div>
-      <div class="card">👶 Trained babysitters</div>
-      <div class="card">📍 Serving your area</div>
+      <div class="card">❤️ Youth-led & Local</div>
+      <div class="card">👶 Caring, Trained Sitters</div>
+      <div class="card">📍 Serving Your Area</div>
     </div>
   </section>
 
-  <section class="team">
+  <section id="team" class="team">
     <h2>Meet Our Team</h2>
-    <!-- Cards for Luna, Kea, Mpho, Lethabo -->
+    <p class="member">👩‍🍼 Luna Makoba</p>
+    <p class="member">🧑‍💼 Kamohelo Mokoena</p>
+    <p class="member">🧑‍💼 Thato Mkhwanazi</p>
+    <p class="member">🧠 Lethabo Mokgadi</p>
   </section>
 
   <section id="book">
     <h2>📅 Book a Babysitter</h2>
-    <!-- Updated booking form with modern layout -->
+    <form action="https://formsubmit.co/Lkm@gmail.com" method="POST">
+      <label for="name">Your Full Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Your Email Address</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="address">Physical Address</label>
+      <input type="text" id="address" name="address" required />
+
+      <label for="date">Preferred Babysitting Date</label>
+      <input type="date" id="date" name="date" required />
+
+      <label for="time">Preferred Start Time</label>
+      <input type="time" id="time" name="time" required />
+
+      <label for="details">Additional Details / Info About Child</label>
+      <textarea id="details" name="details" rows="4" placeholder="Any allergies, special instructions, etc."></textarea>
+
+      <input type="hidden" name="_autoresponse" value="Thank you for booking with LkM Babysitting Services. We’ll get back to you shortly!" />
+      <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html" />
+
+      <input type="submit" value="Send Booking Request" />
+    </form>
   </section>
 
   <footer>
-    <p>© 2025 LkM Babysitting Services</p>
+    <p>© 2025 LkM Babysitting Services – Powered by the youth of tomorrow</p>
   </footer>
+
 </body>
+</html>
