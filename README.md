@@ -27,7 +27,7 @@ This site allows parents and guardians to quickly:
   - Email
   - Date & Time
   - Notes about the child/session
-- Sends info directly to our official inbox: **Lkm@gmail.com**
+- Sends info directly to our official inbox: **lkm547072@gmail.com**
 - Includes a confirmation message
 
 ### ✅ 4. Auto-Reply & Manual Confirmation
